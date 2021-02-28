@@ -20,6 +20,13 @@ class TodoController {
     var result = await todo.updateTodo(id, body);
     res.status(200).json({ serverResponse: result });
   }
+
+  async hechoTodo(req, res) {
+    var id = req.params.id;
+    var result = await todo.hechoTodo(id);
+    res.status(200).json({ serverResponse: result });
+  }
+
   async getTodo(req, res) {
     var key = null;
     var keysearch = null;

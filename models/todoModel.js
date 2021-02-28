@@ -58,6 +58,15 @@ class TodoModel {
     console.log("MSG: ------------- Elemento Todo Actualizado --------------");
     return result;
   }
+
+  async hechoTodo(id) {
+    const result = await this.mymodel.update(
+      { _id: id },
+      { $set: { done: true } }
+    );
+    console.log("MSG: ------------- Elemento Realizado (True) --------------");
+    return result;
+  }
   async getTodo(key) {
     var filter = {};
     if (key != null) {

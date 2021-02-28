@@ -49,5 +49,6 @@ router.post("/todos", todoController.createTodo);
 router.get("/todos/:id", todoController.getTodo);
 router.put("/todos/:id", todoController.updateTodo);
 router.delete("/todos/:id", todoController.deleteTodo);
+router.put("/todos/:id/realizado", todoController.hechoTodo);
 
 export default router;
