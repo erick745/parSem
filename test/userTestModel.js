@@ -8,7 +8,7 @@ var inittest = async () => {
     "1234",
     new Date(),
     16
-  );
+  ); 
   usermodel.createUser(
     "Test2",
     "Test 2 lastname",
