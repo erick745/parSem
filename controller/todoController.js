@@ -41,7 +41,7 @@ class TodoController {
     console.log("----------------todo CONTROLLER--------------------------");
     console.log(result);
     console.log("----------------END CONTROLLER--------------------------");
-    res.status(200).json({ serverResponse: result });
+    res.status(200).json(result); //es.status(200).json({ serverResponse: result });
   }
 }
 export default TodoController;
